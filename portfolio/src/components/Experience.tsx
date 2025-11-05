@@ -147,7 +147,7 @@ export default function Experience() {
                             </div>
                             <div className="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-white dark:bg-[#222f49] px-3">
                               <p className="text-gray-800 dark:text-white text-sm font-medium leading-normal">
-                                TypeScript
+                                Python
                               </p>
                             </div>
                             <div className="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-white dark:bg-[#222f49] px-3">
@@ -157,7 +157,7 @@ export default function Experience() {
                             </div>
                             <div className="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-white dark:bg-[#222f49] px-3">
                               <p className="text-gray-800 dark:text-white text-sm font-medium leading-normal">
-                                Next.js
+                                Django
                               </p>
                             </div>
                             <div className="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-white dark:bg-[#222f49] px-3">
@@ -197,11 +197,6 @@ export default function Experience() {
                                 Kubernetes
                               </p>
                             </div>
-                            <div className="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-white dark:bg-[#222f49] px-3">
-                              <p className="text-gray-800 dark:text-white text-sm font-medium leading-normal">
-                                AWS
-                              </p>
-                            </div>
                           </div>
                         </div>
                         <div>
@@ -219,11 +214,7 @@ export default function Experience() {
                                 Git
                               </p>
                             </div>
-                            <div className="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-white dark:bg-[#222f49] px-3">
-                              <p className="text-gray-800 dark:text-white text-sm font-medium leading-normal">
-                                Jira
-                              </p>
-                            </div>
+                           
                             <div className="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-white dark:bg-[#222f49] px-3">
                               <p className="text-gray-800 dark:text-white text-sm font-medium leading-normal">
                                 Notion
@@ -246,13 +237,13 @@ export default function Experience() {
                           </div>
                           <div>
                             <p className="text-gray-900 dark:text-white font-semibold">
-                              B.S. in Computer Science
+                              B.S. in Telecommunications Engineering
                             </p>
                             <p className="text-gray-600 dark:text-[#90a4cb]">
-                              State University
+                              Al-Neelain University
                             </p>
                             <p className="text-gray-500 dark:text-[#7185aa] text-sm">
-                              Graduated May 2018
+                              Graduated May 2025
                             </p>
                           </div>
                         </div>
