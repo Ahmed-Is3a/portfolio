@@ -1,19 +1,193 @@
-import Footer from './footer';
+import Footer from "./footer";
 
 export default function Contact() {
   return (
     <section id="contact" className="py-20 bg-white">
-      <div className="max-w-3xl mx-auto px-4">
-        <h2 className="text-3xl font-bold mb-6">Contact</h2>
-        <p className="text-gray-600 mb-4">Want to work together or say hi? Send a message.</p>
-        <form className="grid gap-3">
-          <input className="border px-3 py-2 rounded" placeholder="Your name" />
-          <input className="border px-3 py-2 rounded" placeholder="Your email" />
-          <textarea className="border px-3 py-2 rounded" rows={5} placeholder="Message" />
-          <button className="w-max px-5 py-2 bg-sky-600 text-white rounded">Send message</button>
-        </form>
-      </div>
+      <body className="bg-background-light dark:bg-background-dark font-display">
+        <header className="sticky top-0 z-50 w-full border-b border-slate-200/80 bg-background-light/80 backdrop-blur-lg dark:border-slate-800/80 dark:bg-background-dark/80">
+          <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
+            <a
+              className="flex items-center gap-2 text-xl font-bold text-slate-900 dark:text-white"
+              href="#"
+            >
+              <span className="rounded-lg bg-primary p-1.5 text-white">
+                <svg
+                  className="h-6 w-6"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M14.615 1.595a.75.75 0 01.359.852L12.982 9.75h7.268a.75.75 0 01.548 1.262l-10.5 11.25a.75.75 0 01-1.272-.71l2.965-7.192H4.5a.75.75 0 01-.548-1.262l10.5-11.25a.75.75 0 01.913-.143z"
+                    fill-rule="evenodd"
+                  ></path>
+                </svg>
+              </span>
+              <span>MyPortfolio</span>
+            </a>
+            <nav className="hidden items-center gap-6 md:flex">
+              <a
+                className="text-sm font-medium text-slate-600 transition-colors hover:text-primary dark:text-slate-400 dark:hover:text-white"
+                href="#"
+              >
+                Hero Section
+              </a>
+              <a
+                className="text-sm font-medium text-slate-600 transition-colors hover:text-primary dark:text-slate-400 dark:hover:text-white"
+                href="#"
+              >
+                About Me
+              </a>
+              <a
+                className="text-sm font-medium text-slate-600 transition-colors hover:text-primary dark:text-slate-400 dark:hover:text-white"
+                href="#"
+              >
+                Projects Showcase
+              </a>
+              <a
+                className="text-sm font-medium text-slate-600 transition-colors hover:text-primary dark:text-slate-400 dark:hover:text-white"
+                href="#"
+              >
+                Skills &amp; Technologies
+              </a>
+              <a
+                className="text-sm font-bold text-primary transition-colors hover:text-primary/80"
+                href="#"
+              >
+                Contact
+              </a>
+            </nav>
+            <button className="flex items-center justify-center rounded-md p-2 text-slate-600 dark:text-slate-400 md:hidden">
+              <span className="material-symbols-outlined">menu</span>
+            </button>
+          </div>
+        </header>
+        <div className="relative flex min-h-screen w-full flex-col items-center justify-center p-4 sm:p-6 lg:p-8">
+          <div className="w-full max-w-2xl">
+            <div className="mb-8 text-center">
+              <h1 className="text-4xl font-black leading-tight tracking-[-0.033em] text-slate-900 dark:text-white sm:text-5xl">
+                Get In Touch
+              </h1>
+              <p className="mt-3 text-base font-normal leading-normal text-slate-600 dark:text-[#90a4cb]">
+                I'm always open to discussing new projects, creative ideas, or
+                opportunities to be part of an ambitious vision. Feel free to
+                reach out.
+              </p>
+            </div>
+            <div className="rounded-xl border border-slate-200 dark:border-[#314368] bg-white dark:bg-[#182234]/50 p-6 sm:p-8">
+              <form className="flex flex-col gap-6">
+                <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
+                  <label className="flex flex-col">
+                    <p className="pb-2 text-base font-medium text-slate-800 dark:text-white">
+                      Full Name
+                    </p>
+                    <input
+                      className="form-input flex h-12 w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg border border-slate-300 bg-background-light p-3 text-base font-normal leading-normal text-slate-900 placeholder:text-slate-400 focus:border-primary focus:outline-0 focus:ring-2 focus:ring-primary/20 dark:border-[#314368] dark:bg-[#182234] dark:text-white dark:placeholder:text-[#90a4cb] dark:focus:border-primary"
+                      placeholder="Enter your full name"
+                      type="text"
+                      value=""
+                    />
+                  </label>
+                  <label className="flex flex-col">
+                    <p className="pb-2 text-base font-medium text-slate-800 dark:text-white">
+                      Email Address
+                    </p>
+                    <input
+                      className="form-input flex h-12 w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg border border-slate-300 bg-background-light p-3 text-base font-normal leading-normal text-slate-900 placeholder:text-slate-400 focus:border-primary focus:outline-0 focus:ring-2 focus:ring-primary/20 dark:border-[#314368] dark:bg-[#182234] dark:text-white dark:placeholder:text-[#90a4cb] dark:focus:border-primary"
+                      placeholder="Enter your email address"
+                      type="email"
+                      value=""
+                    />
+                  </label>
+                </div>
+                <label className="flex flex-col">
+                  <p className="pb-2 text-base font-medium text-slate-800 dark:text-white">
+                    Your Message
+                  </p>
+                  <textarea
+                    className="form-input flex w-full min-w-0 flex-1 resize-y overflow-hidden rounded-lg border border-slate-300 bg-background-light p-3 text-base font-normal leading-normal text-slate-900 placeholder:text-slate-400 focus:border-primary focus:outline-0 focus:ring-2 focus:ring-primary/20 dark:border-[#314368] dark:bg-[#182234] dark:text-white dark:placeholder:text-[#90a4cb] dark:focus:border-primary"
+                    min-h="120px"
+                    placeholder="Tell me about your project or inquiry..."
+                  ></textarea>
+                </label>
+                <button className="flex h-12 min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-primary px-5 text-base font-bold leading-normal tracking-[0.015em] text-white transition-colors hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:ring-offset-2 focus:ring-offset-background-light dark:focus:ring-offset-background-dark">
+                  <span className="truncate">Send Message</span>
+                </button>
+              </form>
+            </div>
+            <div className="mt-10 text-center">
+              <p className="mb-4 text-base font-medium text-slate-800 dark:text-white">
+                Connect with me
+              </p>
+              <div className="flex items-center justify-center gap-4">
+                <a
+                  aria-label="LinkedIn Profile"
+                  className="group flex h-12 w-12 items-center justify-center rounded-full bg-slate-200/80 transition-colors hover:bg-primary/10 dark:bg-white/10 dark:hover:bg-primary/20"
+                  href="#"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="h-6 w-6 text-slate-600 transition-colors group-hover:text-primary dark:text-slate-400 dark:group-hover:text-white"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.25 6.5 1.75 1.75 0 016.5 8.25zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.4 1.4 0 0013 14.19a1.38 1.38 0 000 .81V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.1 1.16 3.1 4.26z"></path>
+                  </svg>
+                </a>
+                <a
+                  aria-label="GitHub Profile"
+                  className="group flex h-12 w-12 items-center justify-center rounded-full bg-slate-200/80 transition-colors hover:bg-primary/10 dark:bg-white/10 dark:hover:bg-primary/20"
+                  href="#"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="h-6 w-6 text-slate-600 transition-colors group-hover:text-primary dark:text-slate-400 dark:group-hover:text-white"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      clip-rule="evenodd"
+                      d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.168 6.839 9.49.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.031-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.03 1.595 1.03 2.688 0 3.848-2.338 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.001 10.001 0 0022 12c0-5.523-4.477-10-10-10z"
+                      fill-rule="evenodd"
+                    ></path>
+                  </svg>
+                </a>
+                <a
+                  aria-label="X/Twitter Profile"
+                  className="group flex h-12 w-12 items-center justify-center rounded-full bg-slate-200/80 transition-colors hover:bg-primary/10 dark:bg-white/10 dark:hover:bg-primary/20"
+                  href="#"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="h-6 w-6 text-slate-600 transition-colors group-hover:text-primary dark:text-slate-400 dark:group-hover:text-white"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
+                  </svg>
+                </a>
+              </div>
+              <div className="mt-8">
+                <div className="group relative mx-auto inline-flex cursor-pointer items-center justify-center gap-2 rounded-lg bg-slate-200/80 px-4 py-2 text-sm font-semibold text-slate-700 transition-colors hover:bg-slate-300/80 dark:bg-white/10 dark:text-slate-300 dark:hover:bg-white/20">
+                  <span className="material-symbols-outlined text-base leading-none">
+                    mail
+                  </span>
+                  <span>hello@software-engineer.dev</span>
+                  <span className="material-symbols-outlined text-base leading-none">
+                    content_copy
+                  </span>
+                  <div className="absolute -top-10 left-1/2 -translate-x-1/2 rounded-md bg-slate-800 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100">
+                    Copy to clipboard
+                    <div className="absolute bottom-[-4px] left-1/2 h-2 w-2 -translate-x-1/2 rotate-45 bg-slate-800"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </body>
       <Footer />
     </section>
-  )
+  );
 }
