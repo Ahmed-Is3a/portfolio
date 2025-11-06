@@ -2,67 +2,9 @@ import Footer from "./footer";
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-20 bg-white">
-      <body className="bg-background-light dark:bg-background-dark font-display">
-        <header className="sticky top-0 z-50 w-full border-b border-slate-200/80 bg-background-light/80 backdrop-blur-lg dark:border-slate-800/80 dark:bg-background-dark/80">
-          <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-            <a
-              className="flex items-center gap-2 text-xl font-bold text-slate-900 dark:text-white"
-              href="#"
-            >
-              <span className="rounded-lg bg-primary p-1.5 text-white">
-                <svg
-                  className="h-6 w-6"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    clip-rule="evenodd"
-                    d="M14.615 1.595a.75.75 0 01.359.852L12.982 9.75h7.268a.75.75 0 01.548 1.262l-10.5 11.25a.75.75 0 01-1.272-.71l2.965-7.192H4.5a.75.75 0 01-.548-1.262l10.5-11.25a.75.75 0 01.913-.143z"
-                    fill-rule="evenodd"
-                  ></path>
-                </svg>
-              </span>
-              <span>MyPortfolio</span>
-            </a>
-            <nav className="hidden items-center gap-6 md:flex">
-              <a
-                className="text-sm font-medium text-slate-600 transition-colors hover:text-primary dark:text-slate-400 dark:hover:text-white"
-                href="#"
-              >
-                Hero Section
-              </a>
-              <a
-                className="text-sm font-medium text-slate-600 transition-colors hover:text-primary dark:text-slate-400 dark:hover:text-white"
-                href="#"
-              >
-                About Me
-              </a>
-              <a
-                className="text-sm font-medium text-slate-600 transition-colors hover:text-primary dark:text-slate-400 dark:hover:text-white"
-                href="#"
-              >
-                Projects Showcase
-              </a>
-              <a
-                className="text-sm font-medium text-slate-600 transition-colors hover:text-primary dark:text-slate-400 dark:hover:text-white"
-                href="#"
-              >
-                Skills &amp; Technologies
-              </a>
-              <a
-                className="text-sm font-bold text-primary transition-colors hover:text-primary/80"
-                href="#"
-              >
-                Contact
-              </a>
-            </nav>
-            <button className="flex items-center justify-center rounded-md p-2 text-slate-600 dark:text-slate-400 md:hidden">
-              <span className="material-symbols-outlined">menu</span>
-            </button>
-          </div>
-        </header>
+    <section id="contact" className="bg-white">
+      <div className="bg-background-light dark:bg-background-dark font-display">
+        
         <div className="relative flex min-h-screen w-full flex-col items-center justify-center p-4 sm:p-6 lg:p-8">
           <div className="w-full max-w-2xl">
             <div className="mb-8 text-center">
@@ -186,7 +128,7 @@ export default function Contact() {
             </div>
           </div>
         </div>
-      </body>
+      </div>
       <Footer />
     </section>
   );
