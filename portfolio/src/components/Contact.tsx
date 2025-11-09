@@ -66,7 +66,7 @@ export default function Contact() {
                 <a
                   aria-label="LinkedIn Profile"
                   className="group flex h-12 w-12 items-center justify-center rounded-full bg-slate-200/80 transition-colors hover:bg-primary/10 dark:bg-white/10 dark:hover:bg-primary/20"
-                  href="#"
+                  href="https://www.linkedin.com/in/ahmed-issa-b202281a6/"
                 >
                   <svg
                     aria-hidden="true"
@@ -80,7 +80,7 @@ export default function Contact() {
                 <a
                   aria-label="GitHub Profile"
                   className="group flex h-12 w-12 items-center justify-center rounded-full bg-slate-200/80 transition-colors hover:bg-primary/10 dark:bg-white/10 dark:hover:bg-primary/20"
-                  href="#"
+                  href="https://github.com/Ahmed-Is3a"
                 >
                   <svg
                     aria-hidden="true"
@@ -98,7 +98,7 @@ export default function Contact() {
                 <a
                   aria-label="X/Twitter Profile"
                   className="group flex h-12 w-12 items-center justify-center rounded-full bg-slate-200/80 transition-colors hover:bg-primary/10 dark:bg-white/10 dark:hover:bg-primary/20"
-                  href="#"
+                  href="https://x.com/ahmedissa0011"
                 >
                   <svg
                     aria-hidden="true"
@@ -115,7 +115,7 @@ export default function Contact() {
                   <span className="material-symbols-outlined text-base leading-none">
                     mail
                   </span>
-                  <span>hello@software-engineer.dev</span>
+                  <span>ahmedissaten@gmail.com</span>
                   <span className="material-symbols-outlined text-base leading-none">
                     content_copy
                   </span>
