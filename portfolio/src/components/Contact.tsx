@@ -1,6 +1,32 @@
+import { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import Footer from "./footer";
 
 export default function Contact() {
+
+  const form = useRef<HTMLFormElement | null>(null);
+
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(  import.meta.env.VITE_EMAILJS_SERVICE_ID,
+                  import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+
+         form.current!, {
+        publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+          console.log(import.meta.env.VITE_EMAILJS_TEMPLATE_ID);
+
+        },
+      );
+  };
   return (
     <section id="contact" className="bg-white">
       <div className="bg-background-light dark:bg-background-dark font-display">
@@ -18,7 +44,8 @@ export default function Contact() {
               </p>
             </div>
             <div className="rounded-xl border border-slate-200 dark:border-[#314368] bg-white dark:bg-[#182234]/50 p-6 sm:p-8">
-              <form className="flex flex-col gap-6">
+              <form ref={form} onSubmit={sendEmail} className="flex flex-col gap-6">
+
                 <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
                   <label className="flex flex-col">
                     <p className="pb-2 text-base font-medium text-slate-800 dark:text-white">
@@ -28,7 +55,7 @@ export default function Contact() {
                       className="form-input flex h-12 w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg border border-slate-300 bg-background-light p-3 text-base font-normal leading-normal text-slate-900 placeholder:text-slate-400 focus:border-primary focus:outline-0 focus:ring-2 focus:ring-primary/20 dark:border-[#314368] dark:bg-[#182234] dark:text-white dark:placeholder:text-[#90a4cb] dark:focus:border-primary"
                       placeholder="Enter your full name"
                       type="text"
-                      value=""
+                      name='user_name'
                     />
                   </label>
                   <label className="flex flex-col">
@@ -39,7 +66,7 @@ export default function Contact() {
                       className="form-input flex h-12 w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg border border-slate-300 bg-background-light p-3 text-base font-normal leading-normal text-slate-900 placeholder:text-slate-400 focus:border-primary focus:outline-0 focus:ring-2 focus:ring-primary/20 dark:border-[#314368] dark:bg-[#182234] dark:text-white dark:placeholder:text-[#90a4cb] dark:focus:border-primary"
                       placeholder="Enter your email address"
                       type="email"
-                      value=""
+                      name='user_email'
                     />
                   </label>
                 </div>
@@ -53,9 +80,12 @@ export default function Contact() {
                     placeholder="Tell me about your project or inquiry..."
                   ></textarea>
                 </label>
-                <button className="flex h-12 min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-primary px-5 text-base font-bold leading-normal tracking-[0.015em] text-white transition-colors hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:ring-offset-2 focus:ring-offset-background-light dark:focus:ring-offset-background-dark">
-                  <span className="truncate">Send Message</span>
-                </button>
+                <input
+                  type="submit"
+                  value="Send Message"
+                  className="flex h-12 min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-primary px-5 text-base font-bold leading-normal tracking-[0.015em] text-white transition-colors hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:ring-offset-2 focus:ring-offset-background-light dark:focus:ring-offset-background-dark"
+                />
+              
               </form>
             </div>
             <div className="mt-10 text-center">
@@ -133,3 +163,15 @@ export default function Contact() {
     </section>
   );
 }
+
+
+
+
+
+      // <label>Name</label>
+      // <input type="text" name="user_name" />
+      // <label>Email</label>
+      // <input type="email" name="user_email" />
+      // <label>Message</label>
+      // <textarea name="message" />
+      // <input type="submit" value="Send" />
