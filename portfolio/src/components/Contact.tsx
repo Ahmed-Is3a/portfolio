@@ -1,6 +1,7 @@
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import Footer from "./footer";
+import CopyButton from './copyToClipboard';
 
 export default function Contact() {
 
@@ -27,6 +28,7 @@ export default function Contact() {
         },
       );
   };
+
   return (
     <section id="contact" className="bg-white">
       <div className="bg-background-light dark:bg-background-dark font-display">
@@ -141,18 +143,12 @@ export default function Contact() {
                 </a>
               </div>
               <div className="mt-8">
-                <div className="group relative mx-auto inline-flex cursor-pointer items-center justify-center gap-2 rounded-lg bg-slate-200/80 px-4 py-2 text-sm font-semibold text-slate-700 transition-colors hover:bg-slate-300/80 dark:bg-white/10 dark:text-slate-300 dark:hover:bg-white/20">
+                <div className="group relative mx-auto inline-flex items-center justify-center gap-2 rounded-lg bg-slate-200/80 px-4 py-2 text-sm font-semibold text-slate-700 transition-colors dark:bg-white/10 dark:text-slate-300">
                   <span className="material-symbols-outlined text-base leading-none">
                     mail
                   </span>
                   <span>ahmedissaten@gmail.com</span>
-                  <span className="material-symbols-outlined text-base leading-none">
-                    content_copy
-                  </span>
-                  <div className="absolute -top-10 left-1/2 -translate-x-1/2 rounded-md bg-slate-800 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100">
-                    Copy to clipboard
-                    <div className="absolute bottom-[-4px] left-1/2 h-2 w-2 -translate-x-1/2 rotate-45 bg-slate-800"></div>
-                  </div>
+                  <CopyButton text="ahmedissaten@gmail.com" />
                 </div>
               </div>
             </div>
@@ -163,15 +159,3 @@ export default function Contact() {
     </section>
   );
 }
-
-
-
-
-
-      // <label>Name</label>
-      // <input type="text" name="user_name" />
-      // <label>Email</label>
-      // <input type="email" name="user_email" />
-      // <label>Message</label>
-      // <textarea name="message" />
-      // <input type="submit" value="Send" />
