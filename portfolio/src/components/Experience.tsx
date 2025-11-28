@@ -179,7 +179,7 @@ export default function Experience() {
                           <div className="flex gap-2 flex-wrap">
                             <div className="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-white dark:bg-[#222f49] px-3">
                               <p className="text-gray-800 dark:text-white text-sm font-medium leading-normal">
-                                GraphQL
+                                MySQL
                               </p>
                             </div>
                             <div className="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-white dark:bg-[#222f49] px-3">
@@ -194,7 +194,7 @@ export default function Experience() {
                             </div>
                             <div className="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-white dark:bg-[#222f49] px-3">
                               <p className="text-gray-800 dark:text-white text-sm font-medium leading-normal">
-                                Kubernetes
+                                Celery
                               </p>
                             </div>
                           </div>
@@ -212,6 +212,11 @@ export default function Experience() {
                             <div className="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-white dark:bg-[#222f49] px-3">
                               <p className="text-gray-800 dark:text-white text-sm font-medium leading-normal">
                                 Git
+                              </p>
+                            </div>
+                            <div className="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-white dark:bg-[#222f49] px-3">
+                              <p className="text-gray-800 dark:text-white text-sm font-medium leading-normal">
+                                GitHub
                               </p>
                             </div>
                            
@@ -243,7 +248,7 @@ export default function Experience() {
                               Al-Neelain University
                             </p>
                             <p className="text-gray-500 dark:text-[#7185aa] text-sm">
-                              Graduated May 2025
+                              Graduated November 2025
                             </p>
                           </div>
                         </div>
