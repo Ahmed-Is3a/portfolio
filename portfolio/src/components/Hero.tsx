@@ -1,4 +1,5 @@
-import Ahmed from "../assets/ahmed_issa.png";
+// import Ahmed from "../assets/ahmed_issa.png";
+import Ahmed from "../assets/dev.webp";
 
 export default function Hero() {
   return (
@@ -39,13 +40,7 @@ export default function Hero() {
                       className="text-text-light-secondary dark:text-text-dark-secondary hover:text-primary dark:hover:text-primary text-sm font-medium leading-normal transition-colors"
                       href="#"
                     >
-                      Projects Showcase
-                    </a>
-                    <a
-                      className="text-text-light-secondary dark:text-text-dark-secondary hover:text-primary dark:hover:text-primary text-sm font-medium leading-normal transition-colors"
-                      href="#"
-                    >
-                      Skills &amp; Technologies
+                      Projects
                     </a>
                     <a
                       className="text-text-light-secondary dark:text-text-dark-secondary hover:text-primary dark:hover:text-primary text-sm font-medium leading-normal transition-colors"
@@ -93,7 +88,7 @@ export default function Hero() {
                     </div>
                     <div className="w-full md:w-1/2 flex justify-center md:justify-end">
                       <div
-                        className="w-full max-w-sm sm:max-w-md aspect-square bg-center bg-no-repeat bg-cover rounded-full"
+                        className="w-full max-w-sm sm:max-w-md aspect-square bg-center bg-no-repeat bg-cover"
                         data-alt="Professional headshot of Ahmed Issa, a software engineer, smiling in a well-lit office environment."
                         style={{
                           backgroundImage: `url(${Ahmed})`,
