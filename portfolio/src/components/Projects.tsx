@@ -59,56 +59,6 @@ export default function Projects() {
                       tags={["Django", "Python", "PostgreSQL", "Tailwind", "REST API"]}
                       projectUrl="https://medigate-sd.com"
                     />
-                    <div className="flex flex-col gap-4 p-4 rounded-xl bg-white dark:bg-[#151c2c] border border-slate-200 dark:border-[#222f49] shadow-sm hover:shadow-lg transition-shadow duration-300">
-                      <div
-                        className="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg"
-                        data-alt="Abstract image representing code for an API library"
-                        style={{
-                          backgroundImage:
-                            "url('https://lh3.googleusercontent.com/aida-public/AB6AXuB_w2oQig8DM0emJ0_sY1n2tLLS0dc6ABp5f4DpPJtcWS77Mwf0XLOygbqQEdu2BVd1_WCjgiuG4CpR5DftQTh7au80d9uxQMylbywU6nB975gCj2DgiNSKQcwXeg_cTtp7jNB5DpbkWzexnBZZjPXq9wN9r_L7-ZDLnZRB4zNIijNhqpWKUpL3FM6tulr7RZRhwUZvDDEtBm8jDX3f7MDOh-ANN3XqRC27x6M4BHmJBHidw9b5kUqDWzmf1pOOlE1czRWjm0oUZBC9')",
-                        }}
-                      ></div>
-                      <div className="flex flex-col gap-3">
-                        <p className="text-slate-900 dark:text-white text-base font-bold leading-normal">
-                          Open Source API Library
-                        </p>
-                        <p className="text-slate-500 dark:text-[#90a4cb] text-sm font-normal leading-normal">
-                          A lightweight Python library for interacting with a
-                          popular third-party API.
-                        </p>
-                        <div className="flex flex-wrap gap-2">
-                          <span className="text-xs font-medium text-[#0d59f2] dark:text-blue-300 bg-[#0d59f2]/20 dark:bg-blue-900/50 px-2 py-1 rounded-full">
-                            Python
-                          </span>
-                          <span className="text-xs font-medium text-[#0d59f2] dark:text-blue-300 bg-[#0d59f2]/20 dark:bg-blue-900/50 px-2 py-1 rounded-full">
-                            Requests
-                          </span>
-                          <span className="text-xs font-medium text-[#0d59f2] dark:text-blue-300 bg-[#0d59f2]/20 dark:bg-blue-900/50 px-2 py-1 rounded-full">
-                            Pytest
-                          </span>
-                        </div>
-                      </div>
-                      <div className="flex items-center gap-4 mt-2">
-                        <a
-                          className="flex items-center gap-2 text-sm font-medium text-[#0d59f2] dark:text-blue-400 hover:underline"
-                          href="#"
-                        >
-                          <span className="material-symbols-outlined text-base">
-                            link
-                          </span>
-                          View on PyPI
-                        </a>
-                        <a
-                          className="flex items-center gap-2 text-sm font-medium text-slate-600 dark:text-slate-300 hover:underline"
-                          href="#"
-                        >
-                          <span className="material-symbols-outlined text-base">
-                            code
-                          </span>
-                          GitHub
-                        </a>
-                      </div>
-                    </div>
                     
                   </div>
                 </div>

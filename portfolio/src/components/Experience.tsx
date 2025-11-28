@@ -101,32 +101,7 @@ export default function Experience() {
                           </ul>
                         </div>
                       </div>
-                      <div className="grid grid-cols-[auto_1fr] gap-x-4">
-                        <div className="flex flex-col items-center gap-1 pt-1">
-                          <div className="flex h-8 w-8 items-center justify-center rounded-full bg-primary/10 dark:bg-[#222f49]">
-                            <span className="material-symbols-outlined text-lg text-primary dark:text-blue-400">
-                              laptop_chromebook
-                            </span>
-                          </div>
-                        </div>
-                        <div className="flex flex-1 flex-col gap-2">
-                          <p className="text-gray-900 dark:text-white text-lg font-medium leading-normal">
-                            Junior Web Developer
-                          </p>
-                          <p className="text-gray-600 dark:text-[#90a4cb] text-base font-normal leading-normal">
-                            WebStart LLC | Boston, MA
-                          </p>
-                          <p className="text-gray-500 dark:text-[#7185aa] text-sm font-normal">
-                            May 2018 - May 2019
-                          </p>
-                          <ul className="list-disc pl-5 mt-2 space-y-2 text-gray-600 dark:text-[#90a4cb]">
-                            <li>
-                              Built responsive websites for small businesses
-                              using HTML, CSS, and JavaScript.
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
+                  
                     </div>
                   </div>
                   <div className="flex flex-col gap-10">
